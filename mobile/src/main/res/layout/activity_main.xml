@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <variable
+            name="sensor"
+            type="sensordashboard.com.sensordashboard.data.SensorData"
+        />
+    </data>
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor1Name}"
+                android:id="@+id/sensor1Name"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor1Value}"
+                android:layout_row="0"
+                android:layout_column="1"
+                android:layout_columnSpan="2"
+                android:id="@+id/sensor1Value" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor2Name}"
+                android:id="@+id/sensor2Name"
+                android:layout_row="1"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor2Value}"
+                android:layout_row="1"
+                android:layout_column="2"
+                android:id="@+id/sensor2Value" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor3Name}"
+                android:id="@+id/sensor3Name"
+                android:layout_row="2"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor3Name}"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:id="@+id/sensor3Value" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor4Name}"
+                android:id="@+id/sensor4Name"
+                android:layout_row="3"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor4Name}"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:id="@+id/sensor4Value" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor5Name}"
+                android:id="@+id/sensor5Name"
+                android:layout_row="4"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor5Value}"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:id="@+id/sensor5Value" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@{sensor.sensor6Name}"
+                android:id="@+id/sensor6Name"
+                android:layout_row="5"
+                android:layout_column="0" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{sensor.sensor6Value}"
+                android:layout_row="5"
+                android:layout_column="2"
+                android:id="@+id/sensor6Value" />
+        </GridLayout>
+
+    </LinearLayout>
+
+</layout>
